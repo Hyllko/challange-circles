@@ -1,0 +1,107 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	box-sizing: border-box;
+	background: #403b4a;
+	background: linear-gradient(to right, #403b4a, #e7e9bb);
+}
+.box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 400px;
+	height: 400px;
+	position: relative;
+}
+
+.dot-1 {
+	position: absolute;
+	background-color: #fff;
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+	background: linear-gradient(to right, #e7e9bb, #403b4a);
+	box-shadow: 15px 0 30px #403b4a, -15px 0 30px #e7e9bb;
+	transform: scale(0);
+	animation-name: dotted-1;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+}
+.dot-2 {
+	position: absolute;
+	background-color: #fff;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	background: linear-gradient(to right, #403b4a, #e7e9bb);
+	box-shadow: 10px 0 25px #e7e9bb, -10px 0 25px #403b4a;
+	transform: scale(0);
+	animation-name: dotted-2;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+}
+.dot-3 {
+	position: absolute;
+	background-color: #fff;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	background: linear-gradient(to right, #e7e9bb, #403b4a);
+	box-shadow: 5px 0 20px #403b4a, -5px 0 20px #e7e9bb;
+	transform: scale(0);
+	animation-name: dotted-3;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes dotted-1 {
+	0% {
+		transform: scale(0);
+	}
+	15% {
+		transform: scale(1);
+	}
+
+	85% {
+		transform: scale(1);
+	}
+	95% {
+		transform: scale(0);
+	}
+}
+@keyframes dotted-2 {
+	0% {
+		transform: scale(0);
+	}
+	15% {
+		transform: scale(0);
+	}
+	35% {
+		transform: scale(1);
+	}
+	75% {
+		transform: scale(1);
+	}
+	85% {
+		transform: scale(0);
+	}
+}
+@keyframes dotted-3 {
+	0% {
+		transform: scale(0);
+	}
+	15% {
+		transform: scale(0);
+	}
+	35% {
+		transform: scale(0);
+	}
+	65% {
+		transform: scale(1);
+	}
+	75% {
+		transform: scale(0);
+	}
+}
